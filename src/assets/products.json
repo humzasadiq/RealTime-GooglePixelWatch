@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "gogol Pixel Watch 3",
+        "price": "$349.99",
+        "image": "./src/assets/WatchFace/1.png",
+        "watch":true,
+        "size":160,
+        "new": true
+
+    },
+    {
+        "id": 2,
+        "name": "gogol Pixel Watch 2",
+        "price": "From $249.99",
+        "image": "./src/assets/WatchFace/2.png",
+        "watch":true,
+        "size":170,
+        "new": false
+    },
+    {
+        "id": 3,
+        "name": "gogol Pixel Watch 3 Mesh Band",
+        "price": "From $349.99",
+        "image": "./src/assets/WatchFace/3.png",
+        "watch":true,
+        "size":165,
+        "new": false
+    },
+    {
+        "id": 4,
+        "name": "Bitfit Sense 2",
+        "price": "From $349.99",
+        "image": "./src/assets/WatchFace/4.png",
+        "rad":true,
+        "size":150,
+        "watch":true,
+        "new": false
+    },
+    {
+        "id": 5,
+        "name": "Bitfit Versa 4",
+        "price": "From $349.99",
+        "image": "./src/assets/WatchFace/5.png",
+        "rad":true,
+        "size":150,
+        "watch":true,
+        "new": false
+    },
+    {
+        "id": 6,
+        "name": "Accessories",
+        "image": "./src/assets/WatchFace/A.png",
+        "new": false
+    }
+]

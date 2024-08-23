@@ -1,0 +1,47 @@
+.prod-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    gap: 20px;
+    padding: 20px;
+    scrollbar-width: thin; /* For Firefox */
+    scroll-behavior: smooth;
+    scrollbar-color: var(---col) var(---bg);
+    user-select: none;
+}
+
+/* For WebKit browsers */
+.prod-list::-webkit-scrollbar {
+    height: 1px; /* Make the scrollbar thinner */
+    cursor: pointer;
+}
+
+.prod-list::-webkit-scrollbar-track {
+    background: var(---bg);
+    cursor: pointer;
+}
+
+.prod-list::-webkit-scrollbar-thumb {
+    background-color: var(---col);
+    border-radius: 10px;
+}
+
+.prod-list::-webkit-scrollbar-thumb:hover {
+    background: var(---col);
+}
+
+/* Optional: Increase the border-radius for a more rounded thumb */
+.prod-list::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+}
+
+.prods {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    cursor: grab;
+}
+
+.prods:active {
+    cursor: grabbing;
+}

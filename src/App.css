@@ -1,0 +1,144 @@
+@font-face {
+  font-family: googlefonts;
+  src: url(./assets/fonts/googlefonts1.woff2);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: googlefonts;
+  background-color: var(---bg);
+  color: var(---col);
+}
+
+.headline{
+  padding-top: 50px;
+  margin: 0 auto;
+  font-size: 16px;
+  width: 50%;
+  text-align: center;
+}
+
+.a1 {
+  font-size: 32px;
+  color: var(---pri);
+}
+.a2 {
+  font-size: 32px;
+  color: var(---pri);
+}
+
+@media only screen and (max-width: 600px) {
+  .headline{
+    width: 75%;
+  }
+}
+
+
+.light{
+  ---bg:#ffff;
+  ---clbg: #D7E6FF;
+  ---clpri: #98C0FF;
+  ---col: #5f6368;
+  ---pri: #6f9feb;
+  ---sec: #0065EA;
+  ---ss: rgb(235, 59, 59);
+  ---sh: rgba(0, 0, 0, 0.1);
+}
+
+.dark{
+  ---bg: #3c3c3c;
+  ---clbg: black;
+  ---clpri: #60789e;
+  ---col: #c7c7c7;
+  ---pri: #445a7e;
+  ---sec: rgb(235, 59, 59);
+  ---ss: rgb(235, 59, 59);
+  ---sh: rgba(255, 255, 255, 0.1);
+}
+.cupcake{
+  ---bg: #ffff;
+  ---clbg: #FFE3E3;
+  ---clpri: #E3598C;
+  ---col: #5f6368;
+  ---pri:  #EF9FBC;
+  ---sec:  #E0B0F8;
+  ---ss: #af1ef8;
+  ---sh: rgba(0, 0, 0, 0.1);
+}
+
+.bumblebee{
+  ---bg: #ffff;
+  ---clbg: #FFEDD7;
+  ---clpri: #c7771b;
+  ---col: #5f6368;
+  ---pri:  #FFCA7A;
+  ---sec:  #FF8A00;
+  ---ss: white;
+  ---sh: rgba(0, 0, 0, 0.1);
+}
+
+.synthwave{
+  ---bg: #ffff;
+  ---clbg: #e4e8ff;
+  ---clpri: #1AB3EF;
+  ---col: #5f6368;
+  ---pri:  #2D1B69;
+  ---sec:  #58C7F3;
+  ---ss: white;
+  ---sh: rgba(0, 0, 0, 0.1);
+}
+
+.dracula{
+  ---bg: #1F2020;
+  ---clbg: black;
+  ---clpri: #604779;
+  ---col: #D4D4D4;
+  ---pri:  #6D3A9C;
+  ---sec:  #BF95F9;
+  ---ss: #ffff;
+  ---sh: rgba(255, 255, 255, 0.1);
+}
+
+.green{
+  ---bg: #ffff;
+  ---clbg: #EAFFE0;
+  ---clpri: #8fb17f;
+  ---col: #5f6368;
+  ---pri:  #04C000;
+  ---sec:  #50684b;
+  ---ss: red;
+  ---sh: rgba(0, 0, 0, 0.1);
+}
+.luxury{
+  ---bg: #09090B;
+  ---clbg: #FFECC9;
+  ---clpri: #3D2F21;
+  ---col:  #EFCFA0;
+  ---pri:  #DCA54C;
+  ---sec:  #874E05;
+  ---ss: #515D3B;
+  ---sh: rgba(255, 255, 255, 0.1);
+}
+
+.night {
+  ---bg: black;
+  ---clbg: black;
+  ---clpri: rgb(63, 63, 63);
+  ---col:  rgb(104, 103, 103);
+  ---pri:  white;
+  ---sec:  gray;
+  ---ss: rgb(170, 81, 81);
+  ---sh: rgba(255, 255, 255, 0.1);
+}
+
+/* ['light', 'dark', 'cupcake', 'bumblebee', 'synthwave', 'halloween', 'fantasy', 'dracula', 'aqua', 'luxury', 'night']; */
+/* #bec24c */
+/* #f8f8f8 */
+/* #fcffb7 */
