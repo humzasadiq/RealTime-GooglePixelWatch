@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import Products_json from "../assets/products.json";
+import Products_json from "/public/assets/products.json";
 import ProductBox from "./ProductBox";
 import './Products.css';
 
-const Products = ({isAnimating}) => {
+const Products = ({isAnimating, product_type}) => {
     const [Prods, setProds] = useState([]);
     const prodListRef = useRef(null);
 
@@ -58,7 +58,9 @@ const Products = ({isAnimating}) => {
     }, []);
 
     return (
-        <>
+        <div className="upper-shelf-container">
+        <div className="shelf-container">
+            <h2 className="titleoftheshelf" id={product_type}>{product_type}</h2>
             <div className="prod-list" ref={prodListRef}>
                 {Array.isArray(Prods) && Prods.length > 0 ? (
                     Prods.map((prod) => (
@@ -68,7 +70,8 @@ const Products = ({isAnimating}) => {
                     <p>No products available</p>
                 )}
             </div>
-        </>
+        </div>
+        </div>
     );
 };
 

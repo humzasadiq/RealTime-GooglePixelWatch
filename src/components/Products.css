@@ -1,3 +1,16 @@
+.upper-shelf-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.shelf-container {
+    max-width: 1000px;
+    width: 100%; /* Ensure it takes up the full width available up to the max-width */
+    border-radius: 20px;
+}
+
+
 .prod-list {
     display: flex;
     overflow-x: auto;
@@ -44,4 +57,10 @@
 
 .prods:active {
     cursor: grabbing;
+}
+
+
+.titleoftheshelf{
+    padding-left: 20px;
+    color: var(---pri);
 }

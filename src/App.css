@@ -1,13 +1,12 @@
 @font-face {
   font-family: googlefonts;
-  src: url(./assets/fonts/googlefonts1.woff2);
+  src: url(/assets/fonts/googlefonts1.woff2);
 }
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -115,16 +114,6 @@ body {
   ---sec:  #50684b;
   ---ss: red;
   ---sh: rgba(0, 0, 0, 0.1);
-}
-.luxury{
-  ---bg: #09090B;
-  ---clbg: #FFECC9;
-  ---clpri: #3D2F21;
-  ---col:  #EFCFA0;
-  ---pri:  #DCA54C;
-  ---sec:  #874E05;
-  ---ss: #515D3B;
-  ---sh: rgba(255, 255, 255, 0.1);
 }
 
 .night {

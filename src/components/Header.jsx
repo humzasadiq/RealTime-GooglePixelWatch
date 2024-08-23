@@ -1,8 +1,8 @@
 import React from "react";
 import './Header.css'
 
-import logo from '../assets/gogol-logo.png'
-import profile from '../assets/Profile.png'
+import logo from '/assets/gogol-logo.png'
+import profile from '/assets/Profile.png'
 import { MdShoppingCart } from "react-icons/md";
 import { IoColorPalette } from "react-icons/io5";
 
@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const classNames = ['light', 'dark', 'cupcake', 'bumblebee', 'synthwave', 'dracula', 'green', 'luxury', 'night'];
+const classNames = ['light','night', 'dark', 'cupcake', 'bumblebee', 'synthwave', 'dracula', 'green'];
 let currentClassIndex = 0;
 document.body.classList.add(classNames[currentClassIndex])
 function ColorScheme(){
