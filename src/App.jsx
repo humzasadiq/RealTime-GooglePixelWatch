@@ -21,8 +21,6 @@ function App() {
         <h1><a href="#SmartWatches" className='a1'>Smartwatches</a> and <a href="#" className='a2'>trackers</a> to keep you moving.</h1>
       </div>
       <Products isAnimating={isAnimating} product_type={"Trackers"}/>
-      <Products isAnimating={isAnimating} product_type={"Trackers"}/>
-      <Products isAnimating={isAnimating} product_type={"Trackers"}/>
       <Products isAnimating={isAnimating} product_type={"SmartWatches"}/>
       <TermsAndConditions/>
     </>
