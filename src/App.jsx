@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header.jsx'
-import WatchFace from './components/WatchFace.jsx'
 import Products from './components/Products.jsx'
 
 function App() {
