@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import Products_json from "/public/assets/products.json";
-import ProductBox from "./ProductBox";
+import ProductBox1 from "./ProductBox1";
 import './Products.css';
 
-const Products = ({isAnimating, product_type}) => {
+const Products1 = ({isAnimating}) => {
     const [Prods, setProds] = useState([]);
     const prodListRef = useRef(null);
 
@@ -60,19 +60,20 @@ const Products = ({isAnimating, product_type}) => {
     return (
         <div className="upper-shelf-container">
         <div className="shelf-container">
-            <h2 className="titleoftheshelf" id='SmartWatches'>SmartWatches</h2>
+            <h2 className="titleoftheshelf" id='Trackers'>Trackers</h2>
             <div className="prod-list" ref={prodListRef}>
             {Array.isArray(Prods) && Prods.length > 0 ? (
-                Prods.filter(prod => prod.type === "Analog").map((prod) => (
-                    <ProductBox key={prod.id} prod={prod} isAnimating={isAnimating} />
+                Prods.filter(prod => prod.type === "Digital").map((prod) => (
+                    <ProductBox1 key={prod.id} prod={prod} isAnimating={isAnimating} />
                 ))
             ) : (
                 <p>No products available</p>
             )}
+
             </div>
         </div>
         </div>
     );
 };
 
-export default Products;
+export default Products1;

@@ -16,6 +16,10 @@ body {
   color: var(---col);
 }
 
+:root{
+  --font: "googlewatch1";
+}
+
 .headline{
   padding-top: 50px;
   margin: 0 auto;
@@ -50,17 +54,6 @@ body {
   ---ss: rgb(235, 59, 59);
   ---sh: rgba(0, 0, 0, 0.1);
 }
-
-.dark{
-  ---bg: #3c3c3c;
-  ---clbg: black;
-  ---clpri: #60789e;
-  ---col: #c7c7c7;
-  ---pri: #445a7e;
-  ---sec: rgb(235, 59, 59);
-  ---ss: rgb(235, 59, 59);
-  ---sh: rgba(255, 255, 255, 0.1);
-}
 .cupcake{
   ---bg: #ffff;
   ---clbg: #FFE3E3;
@@ -83,25 +76,14 @@ body {
   ---sh: rgba(0, 0, 0, 0.1);
 }
 
-.synthwave{
-  ---bg: #ffff;
-  ---clbg: #e4e8ff;
-  ---clpri: #1AB3EF;
-  ---col: #5f6368;
-  ---pri:  #2D1B69;
-  ---sec:  #58C7F3;
-  ---ss: white;
-  ---sh: rgba(0, 0, 0, 0.1);
-}
-
 .dracula{
-  ---bg: #1F2020;
+  ---bg: #FBE9E7;
   ---clbg: black;
-  ---clpri: #604779;
-  ---col: #D4D4D4;
-  ---pri:  #6D3A9C;
-  ---sec:  #BF95F9;
-  ---ss: #ffff;
+  ---clpri: #FFAB91;
+  ---col: #5f6368;
+  ---pri:  #8a412c;
+  ---sec:  #E64A19;
+  ---ss: #827717;
   ---sh: rgba(255, 255, 255, 0.1);
 }
 
@@ -131,3 +113,21 @@ body {
 /* #bec24c */
 /* #f8f8f8 */
 /* #fcffb7 */
+
+.googlewatch1{
+  --font: "googlewatch1";
+  --lh: 1;
+}
+.googlewatch2{
+  --font: "googlewatch2";
+  --lh: 1;
+}
+.googlewatch3{
+  --font: "googlewatch3";
+  --lh: 1;
+}
+
+.googlewatch4{
+  --font: "googlewatch4";
+  --lh: 1;
+}

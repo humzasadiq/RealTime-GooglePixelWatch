@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "type": "Analog",
         "name": "gogol Pixel Watch 3",
         "price": "$349.99",
         "image": "/assets/WatchFace/1.png",
@@ -11,6 +12,7 @@
     },
     {
         "id": 2,
+        "type": "Analog",
         "name": "gogol Pixel Watch 2",
         "price": "From $249.99",
         "image": "/assets/WatchFace/2.png",
@@ -20,6 +22,7 @@
     },
     {
         "id": 3,
+        "type": "Analog",
         "name": "gogol Pixel Watch 3 Mesh Band",
         "price": "From $349.99",
         "image": "/assets/WatchFace/3.png",
@@ -29,6 +32,7 @@
     },
     {
         "id": 4,
+        "type": "Analog",
         "name": "Bitfit Sense 2",
         "price": "From $349.99",
         "image": "/assets/WatchFace/4.png",
@@ -39,6 +43,7 @@
     },
     {
         "id": 5,
+        "type": "Analog",
         "name": "Bitfit Versa 4",
         "price": "From $349.99",
         "image": "/assets/WatchFace/5.png",
@@ -49,8 +54,61 @@
     },
     {
         "id": 6,
+        "type": "Digital",
+        "name": "Fitbit Charge 6 Tracker",
+        "price": "$159.99",
+        "image": "/assets/WatchFace/6.png",
+        "rad":true,
+        "wide": true,
+        "size":150,
+        "watch":true,
+        "new": false
+    },
+    {
+        "id": 7,
+        "type": "Digital",
+        "name": "Fitbit Luxe",
+        "price": "$79.95 $̶9̶9̶.̶9̶5̶",
+        "image": "/assets/WatchFace/7.png",
+        "rad":true,
+        "size":150,
+        "watch":true,
+        "new": false
+    },
+    {
+        "id": 8,
+        "type": "Digital",
+        "name": "Fitbit Inspire 3",
+        "price": "From $99.95",
+        "image": "/assets/WatchFace/8.png",
+        "rad":true,
+        "size":150,
+        "watch":true,
+        "new": false
+    },
+    {
+        "id": 9,
+        "type": "Digital",
+        "name": "Fitbit Luxe MattBlack",
+        "price": "From $99.95",
+        "image": "/assets/WatchFace/9.png",
+        "rad":true,
+        "size":150,
+        "watch":true,
+        "new": false
+    },
+    {
+        "id": 10,
+        "type": "Analog",
         "name": "Accessories",
-        "image": "/assets/WatchFace/A.png",
+        "image": "/assets/WatchFace/A1.png",
+        "new": false
+    },
+    {
+        "id": 11,
+        "type": "Digital",
+        "name": "Accessories",
+        "image": "/assets/WatchFace/A2.png",
         "new": false
     }
 ]

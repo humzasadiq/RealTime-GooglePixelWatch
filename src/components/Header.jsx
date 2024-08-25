@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const classNames = ['light','night', 'dark', 'cupcake', 'bumblebee', 'synthwave', 'dracula', 'green'];
+const classNames = ['light','night', 'cupcake', 'bumblebee','dracula', 'green'];
 let currentClassIndex = 0;
 document.body.classList.add(classNames[currentClassIndex])
 function ColorScheme(){

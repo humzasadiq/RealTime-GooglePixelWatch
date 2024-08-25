@@ -1,0 +1,51 @@
+@font-face {
+    font-family: googlewatch1;
+    src: url(/assets/fonts/galderglynntitlingel.ttf);
+  }
+
+  @font-face {
+    font-family: googlewatch2;
+    src: url(/assets/fonts/Minbus-A352.otf);
+  }
+
+  @font-face {
+    font-family: googlewatch3;
+    src: url(/assets/fonts/JerseyM54-aLX9.ttf);
+  }
+
+  @font-face {
+    font-family: googlewatch4;
+    src: url(/assets/fonts/CoffeeShow-6YOZx.ttf);
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.digital-watch-container{
+    font-size: 10px;
+    user-select: none;
+    display: grid;
+    text-align: center;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: var(---clpri);
+    border-radius: 20px;
+}
+
+.bold-digital1 {
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: 38px;
+    color: var(---pri);
+    line-height: var(--lh);
+    padding-top: 0px;
+}
+
+.bold-digital2 {
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: 38px;
+    color: var(---sec);
+    padding-bottom: 2px;
+}
+

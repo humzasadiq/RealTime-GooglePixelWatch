@@ -32,6 +32,8 @@ header.scrolled {
     cursor: pointer;
 }
 
+
+
 @media only screen and (max-width: 600px) {
     .logo {
         max-width: 20px;

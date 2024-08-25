@@ -7,12 +7,12 @@ const ProductBox = ({ prod, isAnimating}) => {
     return ( 
         <div className="prods">
             <div className="prod-box">
-            <img className="wa-face" src={prod.image} alt={prod.name} />
+            {prod.type === "Analog" && <img className="wa-face" src={prod.image} alt={prod.name} />}
             <div className="wf-ele">
-                {prod.watch && <WatchFace isAnimating={isAnimating} radius={prod.rad} size={prod.size}/>}
+                {prod.type=="Analog" && prod.watch && <WatchFace isAnimating={isAnimating} radius={prod.rad} size={prod.size}/>}
             </div>
-            <h2 className="title">{prod.name}</h2>
-            <div className="price">{prod.price}</div>
+            {prod.type === "Analog" && <h2 className="title">{prod.name}</h2>}
+            {prod.type === "Analog" && <div className="price">{prod.price}</div>}
         </div>
         </div>
     );
