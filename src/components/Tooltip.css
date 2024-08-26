@@ -1,0 +1,25 @@
+.tool-tip {
+    position: fixed;
+    top: 40px;
+    left: 21px;
+    z-index: 1000;
+    color: var(---pri);
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.tool-tip.hidden {
+    opacity: 0;
+}
+
+.HC {
+    font-size: x-large;
+}
+
+.HF {
+    top: 60px;
+    padding-top: 5px;
+    font-size: x-large;
+    height: auto;
+    opacity: 0.5;
+}

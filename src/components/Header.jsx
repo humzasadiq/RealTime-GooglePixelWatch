@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import './Header.css'
 
 import logo from '/assets/gogol-logo.png'
@@ -18,14 +18,31 @@ window.addEventListener('scroll', () => {
 
 const classNames = ['light','night', 'cupcake', 'bumblebee','dracula', 'green'];
 let currentClassIndex = 0;
+let palleteName = 'light'
 document.body.classList.add(classNames[currentClassIndex])
 function ColorScheme(){
     document.body.classList.remove(classNames[currentClassIndex]);
     currentClassIndex = (currentClassIndex + 1) % classNames.length;
+    palleteName = classNames[currentClassIndex];
     document.body.classList.add(classNames[currentClassIndex]);
+
+    const event = new CustomEvent('paletteChange', { detail: palleteName });
+    window.dispatchEvent(event);
 }
 
 function Header({onTriggerAnimation}) {
+    const [currentPalette, setCurrentPalette] = useState(palleteName);
+
+    useEffect(() => {
+        const handlePaletteChange = (event) => {
+            setCurrentPalette(event.detail);
+        };
+        window.addEventListener('paletteChange', handlePaletteChange);
+        return () => {
+            window.removeEventListener('paletteChange', handlePaletteChange);
+        };
+    }, []);
+    
     return (
         <>
         <header>
@@ -39,6 +56,7 @@ function Header({onTriggerAnimation}) {
         </nav>
         <div className="left-options">
             <a 
+            data-tooltip={palleteName}
             className="profile-style" 
             onClick={(e) => {
                         e.preventDefault();
@@ -47,8 +65,8 @@ function Header({onTriggerAnimation}) {
             >
                 <IoColorPalette className="order-logo"/>
             </a>
-            <a className="profile-style" href="#"><MdShoppingCart className="order-logo"/></a>
-            <a className="profile-style" onClick={(e) => {e.preventDefault();}}><img className="profile-circle" src={profile} alt="" /></a>
+            <a data-tooltip="Cart" className="profile-style" href="#"><MdShoppingCart className="order-logo"/></a>
+            <a data-tooltip="Profile" className="profile-style" onClick={(e) => {e.preventDefault();}}><img className="profile-circle" src={profile} alt="" /></a>
         </div>
         </header>
         </>

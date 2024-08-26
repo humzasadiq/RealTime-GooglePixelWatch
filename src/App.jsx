@@ -4,6 +4,7 @@ import Header from './components/Header.jsx'
 import Products from './components/Products.jsx'
 import Products1 from './components/Products1.jsx'
 import TermsAndConditions from './components/TAC.jsx'
+import Tooltip from './components/Tooltip.jsx'
 
 function App() {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
       <Header onTriggerAnimation={handleTriggerAnimation} />
+      <Tooltip/>
       <div className='headline'>
         <h1><a href="#SmartWatches" className='a1'>Smartwatches</a> and <a href="#Trackers" className='a2'>trackers</a> to keep you moving.</h1>
       </div>
