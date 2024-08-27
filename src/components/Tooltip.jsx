@@ -15,11 +15,11 @@ function Tooltip() {
 
         const fadeTimeoutId = setTimeout(() => {
             setIsFading(true);
-        }, 8000);
+        }, 10000);
 
         const hideTimeoutId = setTimeout(() => {
             setIsVisible(false); 
-        }, 10000); 
+        }, 15000); 
 
         return () => {
             clearInterval(intervalId);

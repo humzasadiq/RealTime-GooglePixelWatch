@@ -33,8 +33,10 @@ function App() {
       <div className='headline'>
         <h1><a href="#SmartWatches" className='a1'>Smartwatches</a> and <a href="#Trackers" className='a2'>trackers</a> to keep you moving.</h1>
       </div>
+      <div className='model-container'>
       <div className='model'>
         <WatchModel isAnimating={isAnimating}/>
+      </div>
       </div>
       <Products isAnimating={isAnimating}  />
       <Products1 id='Trackers'/>
