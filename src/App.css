@@ -142,6 +142,6 @@ body {
 
 @media only screen and (max-width: 600px) {
   .model {
-    height: 500px;
+    height: 400px;
   }
 }
