@@ -9,7 +9,7 @@ const WatchModel = ( {isAnimating} ) => {
             <Environment preset="studio"/>
             <OrbitControls/>   
             <Suspense>
-                <GLBModel isAnimating={isAnimating} scale={1.4}/>
+                <GLBModel isAnimating={isAnimating} scale={1.3}/>
             </Suspense>
         </Canvas>
      );
