@@ -1,0 +1,107 @@
+.watch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.watch-clock {
+    /* border-radius: 50%; */
+    color: black;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+    user-select: none;
+    /* transition: all 3s; */
+
+    /* Inner shadow */
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.watch-clock span {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 0.1px;
+    text-align: center;
+    z-index: -1;
+}
+
+.watch-clock span b {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 60px;
+    visibility: var(--dis);
+    color: var(---clpri);
+    transition: all 0.4s;
+    
+}
+
+.watch-clock::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(---ss);
+    z-index: 2;
+}
+
+.watch-hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.watch-hand1 i {
+    position: absolute;
+    background-color: var(---pri);
+    width: var(--w);
+    height: var(--h);
+    border-radius: 8px;
+    transform-origin: bottom;
+    bottom: var(--t);
+    left: -6px;
+    transition: all 0.4s;
+}
+
+.watch-hand2 i {
+    position: absolute;
+    background-color: var(---sec);
+    width: var(--w);
+    height: var(--h);
+    border-radius: 8px;
+    transform-origin: bottom;
+    bottom: var(--t);
+    margin-left: -2px;
+    transition: all 0.4s;
+}
+
+.watch-hand3 i {
+    position: absolute;
+    background-color: var(---ss);
+    width: var(--w);
+    height: var(--h);
+    border-radius: 8px;
+    transform-origin: bottom;
+    bottom: var(--t);
+    transition: all 0.4s;
+}
+
+.watch-day {
+    position: absolute;
+    top: calc(50% + 40px);
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(92, 92, 92);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 25px;
+    text-align: center;
+    z-index: -1;
+}

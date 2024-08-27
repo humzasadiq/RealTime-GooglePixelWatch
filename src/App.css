@@ -21,7 +21,7 @@ body {
 }
 
 .headline{
-  padding-top: 50px;
+  padding-top: 40px;
   margin: 0 auto;
   font-size: 16px;
   width: 50%;
@@ -130,4 +130,13 @@ body {
 .googlewatch4{
   --font: "googlewatch4";
   --lh: 1;
+}
+
+
+.model {
+  background-color: var(---clpri);
+  height: 50vh;
+  margin: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
