@@ -9,6 +9,7 @@ export function GLBModel(props) {
   const sc2 = 87.04;
 
   const screenRef = useRef();
+  
 
   return (
     <group {...props} dispose={null}>
@@ -135,14 +136,13 @@ export function GLBModel(props) {
           castShadow
           receiveShadow
           geometry={nodes.Screen001.geometry}
-        //   material={materials.screen_porcelain}
-            material={materials['mtl_glass1.001']}
+          material={materials['mtl_glass1.001']}
           position={[0, 0, 0.05]}
           scale={sc1}
         >
-        <Html position={[0, 0, 1.35]} transform occlude={[screenRef]}>
+        <Html position={[0, 0, 1.35]} transform occlude={[screenRef]} distanceFactor={0} depthTest={false}>
             <div className='luna'>
-                <WatchFace3D isAnimating={props.isAnimating} />
+                <WatchFace3D isAnimating={props.isAnimating}/>
             </div>
         </Html>
         </mesh>

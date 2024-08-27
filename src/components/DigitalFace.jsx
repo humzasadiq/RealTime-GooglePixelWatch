@@ -34,15 +34,12 @@ function DigitalFace({wid}) {
             const ss = date.getSeconds();
             const dd = date.getDate();
     
-            // Convert 24-hour format to 12-hour format
-            hh = hh % 12 || 12; // Convert hour from 24-hour to 12-hour format
+            hh = hh % 12 || 12;
     
-            // Format hours and minutes with leading zeros
             const formattedHH = hh.toString().padStart(2, '0');
             const formattedMM = mm.toString().padStart(2, '0');
             const formattedSS = ss.toString().padStart(2, '0');
             
-            // Extract period (AM/PM) from formatted time
             const periodMatch = date.toLocaleString('en-US', {
                 timeZone: 'UTC',
                 hour12: true,
@@ -61,12 +58,12 @@ function DigitalFace({wid}) {
             setDayRef(dd);
         };
     
-        updateDateAndTime(); // Initial update
+        updateDateAndTime();
     
-        const intervalId = setInterval(updateDateAndTime, 1000); // Update every second
+        const intervalId = setInterval(updateDateAndTime, 1000);
     
-        return () => clearInterval(intervalId); // Clean up interval on component unmount
-    }, []); // Empty dependency array to run once on mount
+        return () => clearInterval(intervalId);
+    }, []);
     
 
     useEffect(() => {

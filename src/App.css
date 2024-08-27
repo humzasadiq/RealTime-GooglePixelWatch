@@ -140,8 +140,21 @@ body {
   border-radius: 20px;
 }
 
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  transform: translateY(-50px);
+}
+
+
 @media only screen and (max-width: 600px) {
   .model {
     height: 400px;
   }
+}
+
+.threeD-icon {
+  font-size: 4vh;
+  color: var(---bg);
 }

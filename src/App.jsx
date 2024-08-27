@@ -1,5 +1,8 @@
 import { useEffect, useState, useRef } from 'react'
 import './App.css'
+
+import { Md3dRotation } from "react-icons/md";
+
 import Header from './components/Header.jsx'
 import Products from './components/Products.jsx'
 import Products1 from './components/Products1.jsx'
@@ -36,6 +39,9 @@ function App() {
       <div className='model-container'>
       <div className='model'>
         <WatchModel isAnimating={isAnimating}/>
+        <div className='icon-container'>
+        <Md3dRotation className='threeD-icon' />
+      </div>
       </div>
       </div>
       <Products isAnimating={isAnimating}  />
