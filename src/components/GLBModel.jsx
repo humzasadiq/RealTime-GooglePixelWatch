@@ -19,7 +19,6 @@ export const GLBModel = React.memo((props) => {
 
   const meshes = useMemo(() => [
     { geometry: nodes.Band_v04.geometry, material: materials.Band_Porcelain },
-    { geometry: nodes.blocker_v04001.geometry, material: materials.blocker },
     { geometry: nodes.Crown.geometry, material: materials.crown_porcelain },
     { geometry: nodes.EnclosureButton_v04001.geometry, material: materials.EnclosureButton_Porcelain, rotation: [Math.PI / 2, 0, 0] },
     { geometry: nodes.Glass001.geometry, material: materials['mtl_glass1.001'] },
@@ -29,8 +28,6 @@ export const GLBModel = React.memo((props) => {
     { geometry: nodes.RearChromCover.geometry, material: materials['mtl_faceRear1.001'] },
     { geometry: nodes.RearGlass.geometry, material: materials['mtl_rearglass.001'] },
     { geometry: nodes.SensorBacking001.geometry, material: materials['mtl_SensorBacking1.001'] },
-    { geometry: nodes.SensorsGreen.geometry, material: materials['mtl_SensorsGreen1.001'] },
-    { geometry: nodes.SensorsWhite001.geometry, material: materials['mtl_SensorsWhite1.001'] },
   ], [nodes, materials]);
 
   return (

@@ -45,7 +45,7 @@ function WatchModelLower({isAnimating}) {
             {!isMobile && <OrbitControls enableZoom={false} />}
             <Suspense fallback={null}>
                 <GLBModel modelRef={modelRef} isAnimating={isAnimating} scale={1}/>
-                {/* <SimplifyModel modelRef={modelRef} factor={0.5} /> */}
+                {/* <SimplifyModel modelRef={modelRef} factor={0.6} /> */}
             </Suspense>
         </>
     );

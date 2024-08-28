@@ -18,6 +18,14 @@ body {
 
 :root{
   --font: "googlewatch1";
+  ---bg:#ffff;
+  ---clbg: #D7E6FF;
+  ---clpri: #98C0FF;
+  ---col: #5f6368;
+  ---pri: #6f9feb;
+  ---sec: #0065EA;
+  ---ss: rgb(235, 59, 59);
+  ---sh: rgba(0, 0, 0, 0.1);
 }
 
 .headline{

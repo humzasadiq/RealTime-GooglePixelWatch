@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { SimplifyModifier } from 'three/examples/jsm/modifiers/SimplifyModifier';
 import { useThree } from '@react-three/fiber';
 
-function SimplifyModel({ modelRef, factor = 0.9 }) {
+function SimplifyModel({ modelRef, factor }) {
     const { scene } = useThree();
 
     useEffect(() => {
