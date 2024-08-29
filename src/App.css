@@ -86,7 +86,7 @@ body {
 
 .dracula{
   ---bg: #FBE9E7;
-  ---clbg: black;
+  ---clbg: #fac9ba;
   ---clpri: #FFAB91;
   ---col: #5f6368;
   ---pri:  #8a412c;
@@ -108,7 +108,7 @@ body {
 
 .night {
   ---bg: black;
-  ---clbg: black;
+  ---clbg: rgba(104, 103, 103, 0.2);
   ---clpri: rgb(63, 63, 63);
   ---col:  rgb(104, 103, 103);
   ---pri:  white;

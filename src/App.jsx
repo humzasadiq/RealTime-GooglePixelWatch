@@ -9,6 +9,7 @@ import Products1 from './components/Products1.jsx'
 import TermsAndConditions from './components/TAC.jsx'
 import Tooltip from './components/Tooltip.jsx'
 import WatchModel from './components/WatchModel.jsx'
+import Accordian from './components/Accordian.jsx';
 
 function App() {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -40,13 +41,16 @@ function App() {
       <div className='model'>
         <WatchModel isAnimating={isAnimating}/>
         <div className='icon-container'>
-        <Md3dRotation className='threeD-icon' />
-      </div>
+          <Md3dRotation className='threeD-icon' />
+        </div>
       </div>
       </div>
       <Products isAnimating={isAnimating}  />
+      <Accordian/>
       <Products1 id='Trackers'/>
+      
       <TermsAndConditions/>
+      
     </>
   )
 }
