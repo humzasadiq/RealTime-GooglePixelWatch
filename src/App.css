@@ -163,6 +163,7 @@ body {
 }
 
 .icon-container {
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   display: flex;
   padding-left: 35px;
@@ -177,7 +178,6 @@ body {
 }
 
 .threeD-icon {
-  -webkit-tap-highlight-color: transparent;
   font-size: 4vh;
   color: white;
 }
@@ -188,7 +188,6 @@ body {
 }
 
 .try-text{
-  margin-top: 5px;
   padding: 5px;
   font-size: 15px;
 }
