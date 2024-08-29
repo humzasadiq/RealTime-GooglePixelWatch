@@ -13,7 +13,7 @@ import Accordian from './components/Accordian.jsx';
 
 function App() {
   const [isAnimating, setIsAnimating] = useState(false);
-  const [is3D, setIs3D] = useState(true);
+  const [is3D, setIs3D] = useState(false);
   const classNames = ['googlewatch1', 'googlewatch2', 'googlewatch3', 'googlewatch4'];
   const currentClassIndex = useRef(0);
 
@@ -50,7 +50,13 @@ function App() {
         </div>
         <div className='icon-container'>
           <div className="threeD-icon" onClick={threeDHandle}>
-            {is3D ? <TbCube3dSphere /> : <TbCube3dSphereOff />}
+          {is3D ? (
+            <TbCube3dSphere />
+          ) : (
+            <div className='try-div'>
+              <TbCube3dSphereOff /> <p className='try-text'>Explore in 3D</p>
+            </div>
+          )}
           </div>
         </div>
       </div>

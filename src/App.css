@@ -140,13 +140,15 @@ body {
   --lh: 1;
 }
 
+.model-container {
+  height: 55vh;
+}
 
 .model {
   background-color: var(---clpri);
   height: 50vh;
   margin: 20px;
   border-radius: 20px;
-
 }
 
 .Front{
@@ -161,9 +163,9 @@ body {
 }
 
 .icon-container {
+  cursor: pointer;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 35px;
+  padding-left: 35px;
   transform: translateY(-70px);
 }
 
@@ -177,5 +179,16 @@ body {
 .threeD-icon {
   font-size: 4vh;
   color: white;
+}
+
+.try-div{
+  display: flex;
+  align-items: center;
+}
+
+.try-text{
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 15px;
 }
 
