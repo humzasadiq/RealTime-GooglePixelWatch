@@ -177,6 +177,7 @@ body {
 }
 
 .threeD-icon {
+  -webkit-tap-highlight-color: transparent;
   font-size: 4vh;
   color: white;
 }
