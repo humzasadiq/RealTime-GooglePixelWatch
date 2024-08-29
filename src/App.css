@@ -146,13 +146,25 @@ body {
   height: 50vh;
   margin: 20px;
   border-radius: 20px;
+
+}
+
+.Front{
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  border-radius: 20px;
+  width: 100%;
+  height: inherit;
+  object-fit:cover;
 }
 
 .icon-container {
   display: flex;
   justify-content: flex-end;
-  margin-right: 15px;
-  transform: translateY(-50px);
+  padding-right: 35px;
+  transform: translateY(-70px);
 }
 
 
@@ -166,3 +178,4 @@ body {
   font-size: 4vh;
   color: var(---bg);
 }
+

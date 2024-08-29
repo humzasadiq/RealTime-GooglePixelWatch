@@ -37,12 +37,9 @@ function WatchModelLower({isAnimating}) {
         }
     });
 
-    const isMobile = window.innerWidth < 768;
-
     return ( 
         <>
             <Environment preset="studio"/>
-            {/* {!isMobile && <OrbitControls enableZoom={false} />} */}
             <OrbitControls enableZoom={false}/>
             <Suspense fallback={null}>
                 <GLBModel modelRef={modelRef} isAnimating={isAnimating} scale={1}/>

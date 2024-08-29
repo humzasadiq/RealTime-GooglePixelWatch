@@ -18,6 +18,14 @@
     overflow: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+    .accordian-div {
+        -webkit-tap-highlight-color: transparent;
+        font-size: 15px;
+        width: 90vw;
+    }
+}
+
 .accordian-div-upper {
     display: flex;
     flex-direction: row;
@@ -87,4 +95,10 @@ sup {
 
 .accordian-lower-div p {
     padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .buy-link {
+        font-size: 18px;
+    }
 }

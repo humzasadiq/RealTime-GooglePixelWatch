@@ -4,7 +4,7 @@ import WatchModelLower from "./WatchModelLower";
 
 const WatchModel = ({ isAnimating }) => {
     return ( 
-        <Canvas shadows={false}>
+        <Canvas shadows={false} id='watch-canvas'>
             <WatchModelLower isAnimating={isAnimating}/>
         </Canvas>
     );
