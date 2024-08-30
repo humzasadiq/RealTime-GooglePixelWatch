@@ -18,6 +18,8 @@ function App() {
   const [watchColor, setWatchColor] = useState('#98C0FF');
   const currentClassIndex = useRef(0);
 
+  const visibleRef = useRef(null);
+
   const ColorScheme = () => {
     document.body.classList.remove(classNames[currentClassIndex.current]);
     currentClassIndex.current = (currentClassIndex.current + 1) % classNames.length;
@@ -36,6 +38,32 @@ function App() {
     setIs3D(prevState => !prevState);
   };
 
+  useEffect(() => {
+    if (is3D) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting) {
+            setIs3D(false);
+          }
+        },
+        {
+          root: null,
+          threshold: 0.2,
+        }
+      );
+
+      if (visibleRef.current) {
+        observer.observe(visibleRef.current);
+      }
+
+      return () => {
+        if (visibleRef.current) {
+          observer.unobserve(visibleRef.current);
+        }
+      };
+    }
+  }, [is3D]);
+
   return (
     <>
       <Header onTriggerAnimation={handleTriggerAnimation} setWatchColor={setWatchColor}/>
@@ -46,7 +74,7 @@ function App() {
         </h1>
       </div>
       <div className='model-container'>
-        <div className='model'>
+        <div className='model' ref={visibleRef}>
           {is3D ? <WatchModel isAnimating={isAnimating} watchColor={watchColor} /> : <img className='Front' src='/assets/Front2D.png'/>}
         </div>
         <div className='icon-container'>
