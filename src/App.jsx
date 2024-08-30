@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './App.css';
 
 import { TbCube3dSphere, TbCube3dSphereOff } from "react-icons/tb";
@@ -15,6 +15,7 @@ function App() {
   const [isAnimating, setIsAnimating] = useState(false);
   const [is3D, setIs3D] = useState(false);
   const classNames = ['googlewatch1', 'googlewatch2', 'googlewatch3', 'googlewatch4'];
+  const [watchColor, setWatchColor] = useState('#98C0FF');
   const currentClassIndex = useRef(0);
 
   const ColorScheme = () => {
@@ -37,7 +38,7 @@ function App() {
 
   return (
     <>
-      <Header onTriggerAnimation={handleTriggerAnimation} />
+      <Header onTriggerAnimation={handleTriggerAnimation} setWatchColor={setWatchColor}/>
       <Tooltip />
       <div className='headline'>
         <h1>
@@ -46,7 +47,7 @@ function App() {
       </div>
       <div className='model-container'>
         <div className='model'>
-          {is3D ? <WatchModel isAnimating={isAnimating} /> : <img className='Front' src='/assets/Front2D.png'/>}
+          {is3D ? <WatchModel isAnimating={isAnimating} watchColor={watchColor} /> : <img className='Front' src='/assets/Front2D.png'/>}
         </div>
         <div className='icon-container'>
           <div className="threeD-icon" onClick={threeDHandle}>

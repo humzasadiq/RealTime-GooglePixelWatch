@@ -61,6 +61,7 @@ body {
   ---sec: #0065EA;
   ---ss: rgb(235, 59, 59);
   ---sh: rgba(0, 0, 0, 0.1);
+  --c:#e67a00;
 }
 .cupcake{
   ---bg: #ffff;
@@ -159,7 +160,13 @@ body {
   border-radius: 20px;
   width: 100%;
   height: inherit;
-  object-fit:cover;
+  object-fit:contain;
+}
+
+@media only screen and (max-width: 600px) {
+  .Front{
+    object-fit:cover;
+  }
 }
 
 .icon-container {

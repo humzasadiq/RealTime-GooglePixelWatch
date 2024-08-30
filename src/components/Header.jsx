@@ -16,22 +16,33 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const classNames = ['light','night', 'cupcake', 'bumblebee','dracula', 'green'];
-let currentClassIndex = 0;
-let palleteName = 'light'
-document.body.classList.add(classNames[currentClassIndex])
-function ColorScheme(){
-    document.body.classList.remove(classNames[currentClassIndex]);
-    currentClassIndex = (currentClassIndex + 1) % classNames.length;
-    palleteName = classNames[currentClassIndex];
-    document.body.classList.add(classNames[currentClassIndex]);
+function Header({onTriggerAnimation, setWatchColor}) {
+    const WatchColor = ['#4d8fbe','#1F2020', '#E3598C', '#e67a00','#FFAB91', '#8fb17f'];
+    const classNames = ['light','night', 'cupcake', 'bumblebee','dracula', 'green'];
 
-    const event = new CustomEvent('paletteChange', { detail: palleteName });
-    window.dispatchEvent(event);
-}
+    const [currentClassIndex, setCurrentClassIndex] = useState(0);
+    const [currentPalette, setCurrentPalette] = useState(classNames[0]);
 
-function Header({onTriggerAnimation}) {
-    const [currentPalette, setCurrentPalette] = useState(palleteName);
+    useEffect(() => {
+        document.body.classList.add(classNames[currentClassIndex]);
+        setWatchColor(WatchColor[currentClassIndex]);
+    
+        return () => {
+          document.body.classList.remove(classNames[currentClassIndex]);
+        };
+      }, [currentClassIndex]);
+    
+      function ColorScheme() {
+        document.body.classList.remove(classNames[currentClassIndex]);
+        const newIndex = (currentClassIndex + 1) % classNames.length;
+        setCurrentClassIndex(newIndex);
+        setCurrentPalette(classNames[newIndex]);
+        setWatchColor(WatchColor[newIndex]);
+    
+        const event = new CustomEvent('paletteChange', { detail: classNames[newIndex] });
+        window.dispatchEvent(event);
+      }
+
 
     useEffect(() => {
         const handlePaletteChange = (event) => {
@@ -56,7 +67,7 @@ function Header({onTriggerAnimation}) {
         </nav>
         <div className="left-options">
             <a 
-            data-tooltip={palleteName}
+            data-tooltip={currentPalette}
             className="profile-style" 
             onClick={(e) => {
                         e.preventDefault();

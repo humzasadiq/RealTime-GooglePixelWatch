@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from 'react';
+import React, { useRef, useMemo, useEffect } from 'react';
 import { useGLTF, Html } from '@react-three/drei';
 import WatchFace3D from './WatchFace3D';
 import './GLBModel.css';
@@ -16,6 +16,12 @@ export const GLBModel = React.memo((props) => {
     scale: sc1,
     position: [0, 0, 0.05],
   };
+
+  useEffect(() => {
+    if (materials.Band_Porcelain) {
+      materials.Band_Porcelain.color.set(props.watchColor);
+    }
+  }, [props.watchColor, materials.Band_Porcelain]);
 
   const meshes = useMemo(() => [
     { geometry: nodes.Band_v04.geometry, material: materials.Band_Porcelain },

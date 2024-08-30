@@ -4,7 +4,7 @@ import { Environment, OrbitControls } from '@react-three/drei';
 import { GLBModel } from "./GLBModel";
 // import SimplifyModel from "./SimplifyModel";
 
-function WatchModelLower({isAnimating}) {
+function WatchModelLower({isAnimating, watchColor}) {
     const modelRef = useRef();
     const [animationComplete, setAnimationComplete] = useState(false);
 
@@ -39,10 +39,10 @@ function WatchModelLower({isAnimating}) {
 
     return ( 
         <>
-            <Environment preset="studio"/>
+            <Environment preset="studio" environmentIntensity={0.7}/>
             <OrbitControls enableZoom={false}/>
             <Suspense fallback={null}>
-                <GLBModel modelRef={modelRef} isAnimating={isAnimating} scale={1}/>
+                <GLBModel modelRef={modelRef} isAnimating={isAnimating} scale={1} watchColor={watchColor}/>
                 {/* <SimplifyModel modelRef={modelRef} factor={0.6} /> */}
             </Suspense>
         </>
