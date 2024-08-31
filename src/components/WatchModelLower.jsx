@@ -40,7 +40,7 @@ function WatchModelLower({isAnimating, watchColor}) {
     return ( 
         <>
             <Environment preset="studio" environmentIntensity={0.7}/>
-            <OrbitControls enableZoom={false}/>
+            <OrbitControls enableZoom={true}/>
             <Suspense fallback={null}>
                 <GLBModel modelRef={modelRef} isAnimating={isAnimating} scale={1} watchColor={watchColor}/>
                 {/* <SimplifyModel modelRef={modelRef} factor={0.6} /> */}

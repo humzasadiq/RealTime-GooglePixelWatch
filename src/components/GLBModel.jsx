@@ -4,7 +4,7 @@ import WatchFace3D from './WatchFace3D';
 import './GLBModel.css';
 
 export const GLBModel = React.memo((props) => {
-  const { nodes, materials } = useGLTF('/luna.glb');
+  const { nodes, materials } = useGLTF('/compressedluna.glb');
   const sc1 = 1.92 * 1.15;
   const sc2 = 87.04;
 
@@ -68,4 +68,4 @@ export const GLBModel = React.memo((props) => {
   );
 });
 
-useGLTF.preload('/luna.glb');
+useGLTF.preload('/compressedluna.glb');
