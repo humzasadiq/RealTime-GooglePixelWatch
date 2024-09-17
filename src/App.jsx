@@ -80,7 +80,7 @@ function App() {
         <div className='icon-container'>
           <div className="threeD-icon" onClick={threeDHandle}>
           {is3D ? (
-            <TbCube3dSphere />
+            <div className='untry-div'><TbCube3dSphere /></div>
           ) : (
             <div className='try-div'>
               <TbCube3dSphereOff /> <p className='try-text'>Explore in 3D</p>

@@ -174,7 +174,7 @@ body {
   cursor: pointer;
   display: flex;
   padding-left: 35px;
-  transform: translateY(-70px);
+  transform: translateY(-80px);
 }
 
 
@@ -187,9 +187,17 @@ body {
 .threeD-icon {
   font-size: 4vh;
   color: white;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
 }
 
 .try-div{
+  display: flex;
+  align-items: center;
+}
+
+.untry-div{
   display: flex;
   align-items: center;
 }
@@ -199,3 +207,6 @@ body {
   font-size: 15px;
 }
 
+.threeD-icon:active{
+  background-color: rgba(255, 255, 255, 0.3);
+}
