@@ -1,8 +1,6 @@
 # RealTime Watch Component
-## Cloned Google Pixel Watch Store
-A clone of the Google Pixel Watch store with real-time watch on the display shelf.
-
-
+A clone of the Google Pixel Watch store with real-time watch on the display shelf.  
+🔗Live Link: https://gogol-watchstore.vercel.app/
 <p align="center"><img src="https://github.com/humzasadiq/RealTime-GooglePixelWatch/blob/main/gogol.gif?raw=true" width="800" height="600" alt="gogol.gif"></p>
 
 ### Features:
