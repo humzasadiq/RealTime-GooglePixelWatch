@@ -6,7 +6,7 @@ function WatchFace3D({ isAnimating, radius}) {
     const hrRef = useRef(null);
     const minRef = useRef(null);
     const secRef = useRef(null);
-    const [smooth, setSmooth] = useState(true);
+    const [smooth, setSmooth] = useState(false);
     const [border, setBorder] = useState("50%");
     const [size, setSize] = useState('160px')
     useEffect(() => {
